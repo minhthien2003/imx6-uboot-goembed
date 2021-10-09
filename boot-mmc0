@@ -1,0 +1,5 @@
+setenv mmcroot '/dev/mmcblk0p2 rootwait rw rootfstype=ext4 rootdelay=5 mem=512M'
+run mmcargs
+fatload mmc 0 0x80800000 zImage
+fatload mmc 0 0x83000000 b6h-6ull-14x14-evk-emmc.dtb
+bootz 0x80800000 - 0x83000000 

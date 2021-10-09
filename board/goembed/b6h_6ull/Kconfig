@@ -1,0 +1,12 @@
+if TARGET_B6H_6ULL_14X14 || TARGET_MX6ULL_9X9_EVK
+
+config SYS_BOARD
+	default "b6h_6ull"
+
+config SYS_VENDOR
+	default "goembed"
+
+config SYS_CONFIG_NAME
+	default "b6h_6ull"
+
+endif
